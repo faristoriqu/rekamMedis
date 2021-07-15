@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_spen"
+        android:icon="@drawable/ic_spen"
+        android:title="Pen"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_tools"
+        android:icon="@drawable/ic_pen"
+        android:title="Pen Setting"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_bookmark"
+        android:icon="@drawable/ic_bookmark_list"
+        android:title="Bookmark"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/action_prev"
+        android:icon="@drawable/ic_chevron_left"
+        android:title="Prev"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_next"
+        android:icon="@drawable/ic_chevron_right"
+        android:title="Next"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_more"
+        android:orderInCategory="100"
+        android:title="More"
+        app:showAsAction="always">
+
+        <menu></menu>
+
+    </item>
+
+
+</menu>

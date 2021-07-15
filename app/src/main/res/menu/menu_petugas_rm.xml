@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/active_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_daftar_kunjungan"
+            android:icon="@drawable/ic_daftar_kunjungan"
+            android:title="@string/daftar_kunjungan" />
+
+        <item
+            android:id="@+id/nav_daftar_brm_aktif"
+            android:icon="@drawable/ic_daftar_brm_aktif"
+            android:title="@string/daftar_brm_aktif" />
+
+        <item
+            android:id="@+id/nav_export_brm"
+            android:icon="@drawable/ic_export"
+            android:title="@string/export_brm" />
+
+    </group>
+
+    <group
+        android:id="@+id/pasive_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_daftar_blanko"
+            android:icon="@drawable/ic_daftar_blanko"
+            android:title="@string/daftar_blanko" />
+
+<!--        <item-->
+<!--            android:id="@+id/nav_daftar_brm"-->
+<!--            android:icon="@drawable/ic_daftar_brm"-->
+<!--            android:title="@string/daftar_brm" />-->
+
+        <item
+            android:id="@+id/nav_riwayat_brm"
+            android:icon="@drawable/ic_history_brm"
+            android:title="@string/riwayat_brm" />
+    </group>
+
+    <group
+        android:id="@+id/account_group"
+        android:checkableBehavior="single">
+
+<!--        <item-->
+<!--            android:id="@+id/nav_akun_saya"-->
+<!--            android:icon="@drawable/ic_account"-->
+<!--            android:title="@string/akun_saya" />-->
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit"
+            android:title="@string/logout" />
+    </group>
+
+</menu>

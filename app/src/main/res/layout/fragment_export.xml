@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sabin.digitalrm.fragments.prm.export.ExportFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp">
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:showDividers="middle"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:id="@+id/fragmentItemsList"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="2">
+
+            <include layout="@layout/layout_brm_list_petugas" />
+
+        </FrameLayout>
+
+        <View android:background="#EEE"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/flDetailContainer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#f2f2f2">
+
+            <include
+                android:layout_below="@id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/layout_brm_poli"/>
+
+            <FrameLayout
+                android:id="@+id/poli_list_empty"
+                android:visibility="visible"
+                android:background="#f2f2f2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textStyle="italic"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Tidak ada poli yang dapat ditampilkan :)"/>
+            </FrameLayout>
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progress"
+                android:indeterminate="true"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>

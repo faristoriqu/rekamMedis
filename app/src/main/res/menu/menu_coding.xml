@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_spen"
+        android:icon="@drawable/ic_spen"
+        android:title=" Pen"
+        android:contentDescription="Pen"
+        app:showAsAction="always|withText"/>
+
+    <item
+        android:id="@+id/action_eraser_tools"
+        android:icon="@drawable/ic_eraser_variant_white_24dp"
+        android:title=" Eraser"
+        android:contentDescription="Eraser"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/action_bookmark"
+        android:icon="@drawable/ic_bookmark_list"
+        android:title="Bookmark"
+        android:contentDescription="Bookmark"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_more"
+        android:orderInCategory="100"
+        android:title="More"
+        android:contentDescription="More Settings"
+        app:showAsAction="always">
+
+        <menu></menu>
+
+    </item>
+
+</menu>

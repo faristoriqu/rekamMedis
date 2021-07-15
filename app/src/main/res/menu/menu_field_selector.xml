@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/pg_prv"
+        android:icon="@drawable/ic_chevron_left"
+        android:title="Prev. Page"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/pg_nxt"
+        android:icon="@drawable/ic_chevron_right"
+        android:title="Next Page"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/save"
+        android:icon="@drawable/ic_save_white"
+        android:title="Save"
+        app:showAsAction="always"/>
+</menu>

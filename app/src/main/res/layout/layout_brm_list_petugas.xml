@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/img_filter"/>
+
+        <TextView
+            android:textColor="#FFF"
+            android:id="@+id/txt_filter"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BRM Aktif"/>
+
+        <LinearLayout
+            android:layout_marginEnd="5dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#FFF"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total BRM : "/>
+
+            <TextView
+                android:id="@+id/total_brm"
+                android:textColor="#FFF"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/filter_div"
+        android:layout_below="@id/filter"
+        android:background="@color/colorViewDevider"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp">
+
+    </View>
+
+    <ListView
+        android:layout_below="@id/filter_div"
+        android:listSelector="@drawable/listview_style"
+        android:id="@+id/lvItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true">
+    </ListView>
+
+    <RelativeLayout
+        android:layout_below="@id/filter"
+        android:id="@+id/brm_list_empty"
+        android:visibility="visible"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ico_search"
+            app:srcCompat="@drawable/ic_search"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:tint="@color/colorGray" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/text_alert"
+            android:layout_below="@id/ico_search"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic|bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak ada BRM yang dapat ditampilkan :)"/>
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_below="@id/text_alert"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sentuh icon 'Search' diatas untuk melakukan pencarian "/>
+    </RelativeLayout>
+
+</RelativeLayout>

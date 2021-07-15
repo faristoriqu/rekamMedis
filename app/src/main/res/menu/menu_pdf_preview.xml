@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:iconTint="@color/colorTint"
+        android:id="@+id/action_ratio"
+        android:icon="@drawable/ic_aspect_ratio"
+        android:title="Normal Quality"
+        app:showAsAction="always|withText">
+        <menu></menu>
+
+    </item>
+</menu>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/cardview_visitor" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_kosong"
+        android:visibility="visible"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_margin="40dp"
+            android:id="@+id/poli_kosong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tidak ada BRM yang dapat ditampilkan :)"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:gravity="center_horizontal|center_vertical"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/ic_refresh"
+        android:layout_margin="16dp" />
+
+</FrameLayout>

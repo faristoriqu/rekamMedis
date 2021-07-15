@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:showDividers="middle"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_above="@id/footer"
+        android:showDividers="middle"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/fragmentItemsList"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <include
+                android:id="@+id/vwMasterE"
+                layout="@layout/layout_brm_list_empty" />
+
+            <include
+                android:id="@+id/vwMasterC"
+                layout="@layout/layout_brm_list"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <View android:background="#EEE"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/flDetailContainer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#f2f2f2">
+
+            <include
+                android:id="@+id/vwDetailE"
+                layout="@layout/layout_brm_detail_empty"/>
+
+            <include
+                android:id="@+id/vwDetailC"
+                layout="@layout/layout_brm_detail"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:padding="5dp"
+        android:background="#EEE"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/statusbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="..."/>
+    </LinearLayout>
+
+</RelativeLayout>

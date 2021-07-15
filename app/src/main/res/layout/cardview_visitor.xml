@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        android:layout_margin="2dp"
+        android:layout_marginBottom="2dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/new_label"
+            android:layout_margin="5dp"
+            card_view:srcCompat="@drawable/ic_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_margin="8dp"
+                    android:id="@+id/logo_poli"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="N/A"
+                    android:textSize="16sp"
+                    android:textStyle="italic|bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nomor BRM"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Penjamin"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Poli Tujuan"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis Kunjungan"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Kunjungan"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/no_brm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": N/A"/>
+
+                    <TextView
+                        android:id="@+id/nama_penjamin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": N/A"/>
+
+                    <TextView
+                        android:id="@+id/poli_tujuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": N/A"/>
+
+                    <TextView
+                        android:id="@+id/jenis_kunjungan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": N/A"/>
+
+                    <TextView
+                        android:id="@+id/tanggal_kunjungan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": N/A"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Pasien"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No Visit"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terdaftar Sejak"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tempat Lahir"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Lahir"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/nama_pasien"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": N/A"/>
+
+                    <TextView
+                        android:id="@+id/no_visit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": N/A"/>
+
+                    <TextView
+                        android:id="@+id/terdaftar"
+                        android:maxLines="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": N/A"/>
+
+                    <TextView
+                        android:id="@+id/tempat_lahir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": N/A"/>
+
+                    <TextView
+                        android:id="@+id/tanggal_lahir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": N/A"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat :"/>
+
+                    <TextView
+                        android:id="@+id/alamat"
+                        android:textStyle="italic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="N/A"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

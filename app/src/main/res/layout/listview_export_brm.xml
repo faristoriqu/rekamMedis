@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tanggal"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12/12/2012 12:12"
+        android:layout_alignParentRight="true"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:id="@+id/no_brm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="BRM-X2231"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black" />
+
+
+    <TextView
+        android:textSize="12sp"
+        android:id="@+id/nama_pasien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no_brm"
+        android:textStyle="italic"
+        android:text="Abdullah Bin Muad"/>
+
+</RelativeLayout>

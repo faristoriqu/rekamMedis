@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_refresh"
+        android:title="Refresh"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction,HardcodedText"/>
+
+    <item
+        android:id="@+id/action_notif"
+        android:icon="@drawable/ic_bell"
+        android:title="Notifikasi"
+        app:actionLayout="@layout/custom_action_item_layout"
+        app:showAsAction="always"
+        android:visible="true"
+        tools:ignore="AlwaysShowAction,HardcodedText"/>
+
+    <item
+        android:id="@+id/action_exit_menu"
+        android:icon="@drawable/ic_power"
+        android:title="Menu Keluar"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction,HardcodedText">
+
+        <menu/>
+
+    </item>
+
+</menu>

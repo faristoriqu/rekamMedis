@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF6D00</color> // font hitam
+    <color name="colorPrimaryDark">#E65100</color> //khusus  warna font putih
+    <color name="colorAccent">#FFAD40</color> //hitam
+    <color name="colorPrimaryDarkInt">#FFD57F</color> //hitam
+    <color name="colorGold">#FFD700</color> //hitam
+    <color name="colorGray">#9E9E9E</color>
+    <color name="colorAlert">#FF6E40</color>
+    <color name="colorDark">#414141</color>
+    <color name="colorTint">#FFF</color>
+
+
+    <color name="colorPrimaryTransparant">#5523bbda</color>
+    <color name="colorEmptyItem1">#FFF</color>
+    <color name="colorViewDevider">#999</color>
+
+
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.myTabs.ActionBar">
+
+        <RelativeLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:background="#FFF"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filter : "/>
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/spJenisLayanan"
+                android:layout_marginStart="10dp"
+                android:tooltipText="Pilih Unit"
+                android:layout_width="200dp"
+                android:background="@drawable/background_spinner"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:layout_marginStart="10dp"
+                android:id="@+id/spDateType"
+                android:layout_width="150dp"
+                android:background="@drawable/background_spinner"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+            <Button
+                android:id="@+id/btn_startdate"
+                android:layout_marginStart="10dp"
+                android:text="12/12/2012"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/txtSampai"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="sampai"/>
+
+            <Button
+                android:id="@+id/btn_enddate"
+                android:layout_marginStart="10dp"
+                android:text="12/12/2012"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_updatefilter"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_check"
+            android:backgroundTintMode="src_atop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/colorPrimaryDark" />
+
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_below="@id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/cardview_brm_aktif" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/appbar"
+        android:id="@+id/layout_kosong"
+        android:visibility="visible"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_margin="40dp"
+            android:id="@+id/poli_kosong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tidak ada BRM yang dapat ditampilkan :)"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:gravity="center_horizontal|center_vertical"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_below="@id/appbar"
+        android:visibility="gone"
+        android:id="@+id/progress"
+        android:indeterminate="true"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_refresh"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>
